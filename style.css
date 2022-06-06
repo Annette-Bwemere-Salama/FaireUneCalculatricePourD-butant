@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   max-width: 100vh;
+   height: 100vh;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   font-family: sans-serif;
+}
+
+.calculatrice{
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    
+
+}
