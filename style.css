@@ -16,7 +16,7 @@ body{
 .calculatrice{
     background-color: tomato;
     display: flex;
-    flex-direction: column;j
+    flex-direction: column;
     
 }
 .ecran{
@@ -31,8 +31,8 @@ body{
     padding: 5px;
     font-size: 25px;
 }
-.touches{
-    font-display: grid;
+.touches  {
+    display: grid;
     grid-template-columns: repeat(4,50px);
     grid-template-rows:  repeat(5,50px);
     grid-gap: 7px;
