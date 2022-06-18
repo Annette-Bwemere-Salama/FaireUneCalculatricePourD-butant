@@ -5,3 +5,9 @@ buttons.forEach((button) =>{
             ecran.textContent += button.textContent;
       });
 })
+switch(e.target.innerText){
+    case 'C':
+        buttons.innerText = '';
+        break;
+    case '=':
+}
