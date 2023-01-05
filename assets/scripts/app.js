@@ -3,9 +3,14 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 
 
+function getUserNumberInpur() {
+    return parseInt(usrInput.value);
+}
 function add() {
-    currentResult = currentResult + parseInt(userInput.value);
-    outputResult(currentResult, '');
+    const enterederNumber = getUserNumberInpur();
+    const calcDescription = `${currentResult} + ${enterederNumber}`;
+    currentResult = currentResult + enterederNumber;
+    outputResult(currentResult, calcDescription);
 }
 
 
