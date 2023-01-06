@@ -29,18 +29,22 @@ function substract() {
 
 }
 
-function multiply(params) {
-    
+function multiply() {
+    const enterederNumber = getUserNumberInpur();
+    const initialResult = currentResult;
+    currentResult = currentResult * enterederNumber;
+    createAndWriteOutput('*', initialResult , enterederNumber)
 }
 
-function divide(params) {
-    
-}
 
+function divide() {
+    const enterederNumber = getUserNumberInpur();
+    const initialResult = currentResult;
+    currentResult = currentResult / enterederNumber;
+    createAndWriteOutput('/', initialResult , enterederNumber)
+}
 
 addBtn.addEventListener('click', add)
 subtractBtn.addEventListener('click', substract)
-
-
-
-
+multiplyBtn.addEventListener('click', multiply)
+divideBtn.addEventListener('click', divide)
