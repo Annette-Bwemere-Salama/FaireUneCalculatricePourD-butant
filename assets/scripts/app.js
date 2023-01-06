@@ -7,19 +7,26 @@ function getUserNumberInpur() {
     return parseInt(usrInput.value);
 }
 
+function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
+    const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
+    outputResult(currentResult, calcDescription);
+}
+
+
 function add() {
     const enterederNumber = getUserNumberInpur();
-    const calcDescription = `${currentResult} + ${enterederNumber}`;
+    const initialResult = currentResult;
     currentResult = currentResult + enterederNumber;
-    outputResult(currentResult, calcDescription);
+    createAndWriteOutput('+', initialResult , enterederNumber)
 }
 
 
 function substract() {
     const enterederNumber = getUserNumberInpur();
-    const calcDescription = `${currentResult} - ${enterederNumber}`;
+    const initialResult = currentResult;
     currentResult = currentResult - enterederNumber;
-    outputResult(currentResult, calcDescription);
+    createAndWriteOutput('-', initialResult , enterederNumber)
+
 }
 
 function multiply(params) {
